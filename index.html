@@ -36,6 +36,32 @@
 
     <div class="row">
 
+      <article id= "multiplication" class="col-md-8">
+        <h2>No build tools required!</h2>
+        <p> Here's another component.</p>
+        <p>This one multiplies!</p>
+
+        <fieldset class="mt-2">
+          <label for="guest">Enter your name (2 to 20 characters):</label>
+          <input v-model="guest" id="guest" type="text" minlength="2" maxlength="20">
+        </fieldset>
+
+
+        <fieldset class="mt-2">
+          <label for="firstNumber">Enter first number (1 to 100):</label>
+          <input v-model="firstNumber" id="firstNumber" type="number" min="1" max="100">
+          <span id="firstWarning" class="text-danger"></span>
+        </fieldset>
+
+        <fieldset class="mt-2">
+          <label for="secondNumber">Enter second number (1 to 100):</label>
+          <input v-model="secondNumber" id="secondNumber" type="number" min="1" max="100">
+          <span id="secondWarning" class="text-danger"></span>
+        </fieldset>
+        <h3 class="mt-2">{{result5}}</h3>
+      </article>
+
+
       <article id="adder" class="col-md-4 ">
         <h2>Vue is awesome!</h2>
         <p>Two-way data binding listens for changes and automatically updates.</p>
@@ -66,6 +92,7 @@
         <p>Here's another component.</p>
         <p>This one subtracts!</p>
 
+       
         <fieldset class="mt-2">
           <label for="first">Enter first number (1 to 100):</label>
           <input v-model="first" id="first" type="number" min="1" max="100">
@@ -77,7 +104,10 @@
           <input v-model="second" id="second" type="number" min="1" max="100">
           <span id="secondWarning" class="text-danger"></span>
         </fieldset>
+        <h3 class="mt-2">{{result}}</h3>
 
+
+     
         <h3 class="mt-2">{{difference}}</h3>
       </article>
       <article id="findSum" class="col-md-4 ">
@@ -158,6 +188,7 @@
   <script src="components/subtracter/subtracter.js"></script>
   <script src="components/findSum/findSum.js"></script>
   <script src="components/coder/coder.js"></script>
+  <script src="components/multiplication/multiplication.js"></script>
 
 </body>
 
